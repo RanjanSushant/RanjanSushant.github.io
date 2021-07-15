@@ -1,65 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
-body {
-    background-image: url("https://wallpapercave.com/wp/wp5480613.png");
-    padding-bottom: 50px;
-}
-
-.intro,
-main {
-    color: rgb(39, 221, 39);
-    padding-top: 70px;
-    max-width: 75%;
-    margin: 0 auto;
-    font-family: "Work Sans", sans-serif;
-    font-weight: 700;
-    text-align: center;
-}
-
-#exampleInputEmail1 {
-    max-width: 400px;
-}
-
-.input-group {
-    padding-left: 350px;
-}
-
-main img {
-    box-shadow: 10px 10px 25px white;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-}
-
-footer li {
-    float: right;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-
-/* Change the link color to #111 (black) on hover */
-
-li a:hover {
-    background-color: hsl(64, 100%, 80%);
-    color: darkblue
-}
-
-.top-nav {
-    position: fixed;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+    body {
+        /*background-image: url("https://wallpapercave.com/wp/wp5480613.png");*/
+        padding-bottom: 50px;
+        background-size: cover;
+    }
+    
+    .intro,
+    main {
+        color: rgb(39, 221, 39);
+        padding-top: 70px;
+        max-width: 75%;
+        margin: 0 auto;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    #exampleInputEmail1 {
+        max-width: 400px;
+    }
+    
+    .input-group {
+        padding-left: 350px;
+    }
+    
+    main img {
+        box-shadow: 10px 10px 25px white;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+        background-color: #333;
+    }
+    
+    li {
+        float: left;
+    }
+    
+    footer li {
+        float: right;
+    }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    /* Change the link color to #111 (black) on hover */
+    
+    li a:hover {
+        background-color: hsl(64, 100%, 80%);
+        color: darkblue
+    }
+    
+    .top-nav {
+        position: fixed;
+    }
+    
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        height: 300px;
+        width: 400px;
+    }

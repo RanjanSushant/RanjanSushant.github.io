@@ -1,1 +1,6 @@
-// JavaScript file
+document.addEventListener("DOMContentLoaded",() => {
+
+    const cardArray = {
+        
+    }
+})
