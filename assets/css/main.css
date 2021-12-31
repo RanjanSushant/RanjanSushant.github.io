@@ -1084,7 +1084,7 @@ input, select, textarea {
 
 body {
 	opacity: 0;
-    transition-duration: 0.7s;
+    transition-duration: 1s;
     transition-property: opacity;
 }
 
