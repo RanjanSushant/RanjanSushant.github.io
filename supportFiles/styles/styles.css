@@ -55,9 +55,11 @@ h1 {
     text-align: center;
     display: flex;
     justify-content: space-between;
-    margin: 14em;
+    margin-top: 12em;
+    padding: 1em;
     width: 60%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.2);
+    border-radius: 10px;
     /* border: red solid 2px; */
 }
 
@@ -67,4 +69,14 @@ h1 {
 
 .blue-pill > h3 {
     color: blue;
+}
+
+#matrix {
+    box-sizing: border-box;
+    background: black;
+    height: 97vh;
+    width: 99vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
