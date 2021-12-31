@@ -2,6 +2,7 @@ const containerEl = document.querySelector(".container")
 // const pEl = document.querySelector(".canvas-details")
 const textEl = document.querySelector(".auto-text")
 const redPill = document.querySelector(".red-pill-btn")
+const bluePill = document.querySelector(".blue-pill-btn")
 
 
 // pEl.style.display = "none"
@@ -29,6 +30,8 @@ const alphabet = katakana + latin + nums;
 
 const rainDrops = [];
 
+let rainTimer;
+
 // Typewriter effect
 
 writeText()
@@ -36,15 +39,17 @@ writeText()
 // pEl.innerText = canvas.width + "," + canvas.height
 
 function writeText() {
+    
     textEl.innerText = text.slice(0, idx)
 
     idx++
 
     if(idx > text.length) {
+        setTimeout(writeText, 1500)
         idx = 1
+    } else {
+        setTimeout(writeText, 150)
     }
-
-    setTimeout(writeText, 150)
 }
 
 // setInterval(writeText, 150)
@@ -75,7 +80,7 @@ function makeItRain() {
         }
     };
     
-    setInterval(draw, 30);
+    rainTimer = setInterval(draw, 30);
 }
 
 // Red Pill functionality
@@ -86,6 +91,17 @@ function loadRedPillPage() {
     canvas.style.display = "block"
     // containerEl.remove()
     makeItRain()
+    setTimeout(function(){location.replace('test-page.html')}, 10000)
+}
+
+function loadBluePillPage() {
+    // pEl.innerText = canvas.width + "," + canvas.height
+    containerEl.style.display = "none"
+    canvas.style.display = "block"
+    // containerEl.remove()
+    makeItRain()
+    setTimeout(function(){location.replace('blue-pill.html')}, 10000)
 }
 
 redPill.addEventListener("click", loadRedPillPage)
+bluePill.addEventListener("click", loadBluePillPage)
