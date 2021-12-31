@@ -92,10 +92,10 @@ function loadRedPillPage() {
     // containerEl.remove()
     makeItRain()
     setTimeout(function(){
-        clearInterval(rainTimer)
+        // clearInterval(rainTimer)
         document.body.classList.add("fade-out")
-        location.replace('test-page.html')
-    }, 5000)
+        location.replace('blue-pill.html')
+    }, 6000)
 }
 
 function loadBluePillPage() {
@@ -105,10 +105,10 @@ function loadBluePillPage() {
     // containerEl.remove()
     makeItRain()
     setTimeout(function(){
-        clearInterval(rainTimer)
+        // clearInterval(rainTimer)
         document.body.classList.add("fade-out")
         location.replace('blue-pill.html')
-    }, 5000)
+    }, 6000)
 }
 
 redPill.addEventListener("click", loadRedPillPage)
