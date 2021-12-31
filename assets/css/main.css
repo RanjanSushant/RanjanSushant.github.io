@@ -1079,3 +1079,15 @@ input, select, textarea {
 		#header nav {
 			padding: 0 1em;
 		} }
+
+/* My styles*/
+
+body {
+	opacity: 0;
+    transition-duration: 0.7s;
+    transition-property: opacity;
+}
+
+.fade-in {
+	opacity: 1;
+}

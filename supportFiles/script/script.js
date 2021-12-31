@@ -91,7 +91,11 @@ function loadRedPillPage() {
     canvas.style.display = "block"
     // containerEl.remove()
     makeItRain()
-    setTimeout(function(){location.replace('test-page.html')}, 10000)
+    setTimeout(function(){
+        clearInterval(rainTimer)
+        document.body.classList.add("fade-out")
+        location.replace('test-page.html')
+    }, 5000)
 }
 
 function loadBluePillPage() {
@@ -100,7 +104,11 @@ function loadBluePillPage() {
     canvas.style.display = "block"
     // containerEl.remove()
     makeItRain()
-    setTimeout(function(){location.replace('blue-pill.html')}, 10000)
+    setTimeout(function(){
+        clearInterval(rainTimer)
+        document.body.classList.add("fade-out")
+        location.replace('blue-pill.html')
+    }, 5000)
 }
 
 redPill.addEventListener("click", loadRedPillPage)
