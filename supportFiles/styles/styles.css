@@ -25,6 +25,10 @@ h1 {
 }
 
  
+.button-section {
+    text-align: center;
+}
+
 .button-section > button {
     padding: 1em 2em;
     font-size: 1.25rem;
@@ -50,7 +54,7 @@ h1 {
 .legend {
     text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 14em;
     width: 60%;
     background: rgba(0,0,0,0.5);
