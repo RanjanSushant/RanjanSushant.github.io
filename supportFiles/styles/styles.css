@@ -2,56 +2,65 @@
 	
 html {
     min-height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 	
 body {
-   /* background-image: */
-           /* linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)), */
-           /* url('../images/C.PNG'); */
-       /* padding-bottom: 50px; */
-       /* background-size: cover; */
-       background: #000;
-       color: greenyellow;
-       width: 30%;
-       margin: 0 auto;
+    background: rgb(0,0,0,0.9);
+    color: rgb(44, 235, 56);
+    /* border: 2px solid red; */
    }
-    
+
+h1 {
+    font-size: 4rem;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ 
 .button-section > button {
-    padding: 15px 32px;
-    font-size: 20px;
+    padding: 1em 2em;
+    font-size: 1.25rem;
     font-weight: bold;
     color: white;
     border-radius: 80%;
+    margin: 1.5em;
 }
 
-.red-pill {
+.red-pill-btn {
     background: red;
-    margin-right: 25px;
+    /* margin-right: 25px; */
 }
 
-.blue-pill {
+.blue-pill-btn {
     background: blue;
 }
 
-.typewriter {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(30, end),
-      blink-caret .75s step-end infinite;
-  }
-      
-      /* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+.auto-text {
+    text-align: center;
 }
-      
-      /* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+
+.legend {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 14em;
+    width: 60%;
+    background: rgba(0,0,0,0.5);
+    /* border: red solid 2px; */
+}
+
+.red-pill > h3 {
+    color: red;
+}
+
+.blue-pill > h3 {
+    color: blue;
 }
