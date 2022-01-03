@@ -94,7 +94,7 @@ function loadRedPillPage() {
     setTimeout(function(){
         // clearInterval(rainTimer)
         document.body.classList.add("fade-out")
-        location.replace('blue-pill.html')
+        location.replace('red-pill.html')
     }, 6000)
 }
 
