@@ -1,107 +1,113 @@
- @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
-	
-html {
-    min-height: 100vh;
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+* {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
 }
-	
+
+html {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 body {
-    background: rgb(0,0,0,0.9);
-    color: rgb(44, 235, 56);
-    opacity: 1;
-    transition-duration: 1s;
-    transition-property: opacity;
-    /* border: 2px solid red; */
-   }
+  background: rgb(0, 0, 0, 0.88);
+  color: rgb(44, 235, 56);
+  opacity: 1;
+  transition-duration: 1s;
+  transition-property: opacity;
+  /* border: 2px solid red; */
+}
 
 .fade-out {
-    opacity: 0;
+  opacity: 0;
 }
 
 h1 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 .flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
- 
 .button-section {
-    text-align: center;
+  text-align: center;
 }
 
 .button-section > button {
-    padding: 1.2em 2.2em;
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: white;
-    border:none;
-    /* border-radius:50%; */
-    border-top-left-radius: 43%;
-    border-top-right-radius: 43%;
-    border-bottom-left-radius: 43%;
-    border-bottom-right-radius: 43%;
-    margin: 1.5em;
-    cursor: pointer;
+  padding: 1.2em 2.2em;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  /* border-radius:50%; */
+  border-top-left-radius: 43%;
+  border-top-right-radius: 43%;
+  border-bottom-left-radius: 43%;
+  border-bottom-right-radius: 43%;
+  margin: 1.5em;
+  cursor: pointer;
 }
 
 .red-pill-btn {
-    background: red;
-    /* box-shadow: 5px 5px pink; */
-    /* box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px; */
-    box-shadow: 0px 16px 44px -2px rgba(255,0,0,0.87);
-    /* margin-right: 25px; */
+  background: red;
+  /* box-shadow: 5px 5px pink; */
+  /* box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px; */
+  box-shadow: 0px 16px 44px -2px rgba(255, 0, 0, 0.87);
+  /* margin-right: 25px; */
 }
 
 .blue-pill-btn {
-    background: blue;
-    box-shadow: 0px 16px 44px -2px rgba(0,0,255,0.87);
-    /* box-shadow: 5px 5px lightblue; */
+  background: blue;
+  box-shadow: 0px 16px 44px -2px rgba(0, 0, 255, 0.87);
+  /* box-shadow: 5px 5px lightblue; */
 }
 
 .auto-text {
-    text-align: center;
+  text-align: center;
 }
 
 .legend {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 12em;
-    padding: 1.5em;
-    width: 60%;
-    background: rgba(0,0,0,0.2);
-    border-radius: 10px;
-    /* border: red solid 2px; */
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12em;
+  padding: 1.5em;
+  width: 60%;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  /* border: red solid 2px; */
 }
 
 .red-pill > h3 {
-    color: red;
+  color: red;
 }
 
 .blue-pill > h3 {
-    color: blue;
+  color: blue;
 }
 
 #matrix {
-    box-sizing: border-box;
-    background: black;
-    height: 97vh;
-    width: 99vw;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 700px) {
-    .legend {
-        width: 90%;
-        margin-top: 5em;
-    }
+  .legend {
+    width: 90%;
+    margin-top: 5em;
+  }
 }
